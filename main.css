@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    background-image: url(./2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label {
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.input {
+    width: 500px;
+}
+.courses-input {
+    width: 300px;
+    padding-left: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    transition: 0.5s;
+}
+.courses-input:focus {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: rgba(255, 255, 255, 0.747) 0px 5px 15px;
+}
+button.add,
+button.remove,
+button.delete,
+button.edit,
+button.apply {
+    width: calc(200px / 2);
+    height: 40px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button.remove {
+    display: none;
+}
+button.remove.active {
+    display: block;
+}
+button.apply.active {
+    display: block;
+}
+button.apply {
+    display: none;
+}
+button.add.active {
+    display: none;
+}
+button.add,
+button.apply {
+    background-color: rgb(52, 52, 180);
+    box-shadow: rgba(52, 52, 180) 0px 7px 29px 0px;
+    margin: 0 5px;
+}
+
+button.remove {
+    background-color: rgba(255, 68, 0, 0.995);
+    box-shadow: rgba(255, 68, 0, 0.995) 0px 7px 29px 0px;
+}
+button.delete {
+    background-color: red;
+}
+button.edit {
+    background-color: #008000;
+}
+button.edit:hover {
+    box-shadow: rgba(0, 232, 0, 0.995) 0px 7px 29px 0px;
+}
+button.delete:hover {
+    box-shadow: rgba(255, 0, 0, 0.747) 0px 7px 29px 0px;
+}
+.group {
+    display: flex;
+}
+#view {
+    margin-top: 20px;
+}
+#view li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 55px;
+    align-items: center;
+    background-color: rgb(255, 166, 0);
+    box-shadow: rgba(255, 165, 0, 0.747) 0px 5px 15px;
+    padding: 20px 10px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+.left {
+    display: flex;
+    gap: 10px;
+}
+.left input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
